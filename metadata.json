@@ -1,0 +1,8 @@
+{
+  "name": "የአዳነ እና ቢታንያ የሰርግ ጥሪ",
+  "description": "የአቶ አዳነ እና የወ/ሪት ቢታንያ የጋብቻ ሥነ-ሥርዓት የክብር ጥሪ | ግንቦት 16 ቀን 2018 ዓ.ም",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

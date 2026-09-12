@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Formal & Elegant Amharic / Ge'ez Typography System */
+
+/* 1. Formal Bride & Groom Names (Regal, stately, elegant serif with graceful proportions) */
+.font-amharic-names {
+  font-family: 'Noto Serif Ethiopic', 'Nyala', 'Kefa', Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 2. Formal Amharic Headings (Noble, stately Ge'ez serif with dignified presence) */
+.font-amharic-heading {
+  font-family: 'Noto Serif Ethiopic', 'Nyala', 'Kefa', Georgia, serif;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 3. Formal Scripture & Blessings (Refined Ge'ez serif with generous line height) */
+.font-amharic-poetic {
+  font-family: 'Noto Serif Ethiopic', 'Nyala', 'Kefa', Georgia, serif;
+  font-weight: 500;
+  line-height: 1.75;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 4. Formal, Highly Legible Amharic Body Text */
+.font-amharic-body {
+  font-family: 'Noto Sans Ethiopic', 'Nyala', 'Kefa', system-ui, -apple-system, sans-serif;
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Formal UI Elements, Badges & Buttons */
+.font-amharic-ui {
+  font-family: 'Noto Sans Ethiopic', 'Nyala', 'Kefa', system-ui, -apple-system, sans-serif;
+  letter-spacing: 0.01em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Legacy Ethiopic class upgrades for universal formal elegance */
+.font-serif-ethiopic {
+  font-family: 'Noto Serif Ethiopic', 'Nyala', 'Kefa', Georgia, serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-sans-ethiopic {
+  font-family: 'Noto Sans Ethiopic', 'Nyala', 'Kefa', system-ui, -apple-system, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-script {
+  font-family: 'Alex Brush', cursive;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Metallic gold text and border gradients */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fce8bd 0%, #d4af37 40%, #aa7c11 75%, #f7dfa5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #f4e3b2 0%, #c9a66b 50%, #8f652b 100%);
+}
+
+.bg-gold-sheen {
+  background: linear-gradient(90deg, #b8874e 0%, #f4e3b2 30%, #c9a66b 60%, #7a5a2e 100%);
+}
+
+.border-gold {
+  border-color: #c9a66b;
+}
+
+/* Spotlight beam animations on the opening screen */
+@keyframes beamGlow {
+  0%, 100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.animate-beam {
+  animation: beamGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes pulseSubtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-bounce-gentle {
+  animation: pulseSubtle 2.2s ease-in-out infinite;
+}
+
+/* Mobile-first scroll snap styling */
+.snap-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+}
+
